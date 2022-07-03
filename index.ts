@@ -8,7 +8,7 @@ interface Lock<T> {
 interface LockOptions {
 }
 
-function useLock<T>({}: LockOptions): Lock<T> {
+function useLock<T>(options?: LockOptions): Lock<T> {
   const [runningPromise, setRunningPromise] = useState<Promise<T> | null>(null)
 
   const run = useCallback<(runner: () => Promise<T>) => Promise<T>>(async (runner: () => Promise<T>) => {
