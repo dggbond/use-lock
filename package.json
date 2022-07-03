@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf dist/esm && tsc --sourceMap --outDir dist/esm",
-    "build:production": "rm -rf dist/esm && tsc --outDir dist/esm"
+    "build:production": "rm -rf dist/esm && tsc --outDir dist/esm",
+    "prepublish": "yarn build:production"
   },
   "peerDependencies": {
     "react": "^17.0.0",

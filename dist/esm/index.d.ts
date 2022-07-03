@@ -4,5 +4,5 @@ interface Lock<T> {
 }
 interface LockOptions {
 }
-declare function useLock<T>({}: LockOptions): Lock<T>;
+declare function useLock<T>(options?: LockOptions): Lock<T>;
 export default useLock;

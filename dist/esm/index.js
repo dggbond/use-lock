@@ -35,9 +35,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 import { useCallback, useState } from 'react';
-function useLock(_a) {
+function useLock(options) {
     var _this = this;
-    var _b = useState(null), runningPromise = _b[0], setRunningPromise = _b[1];
+    var _a = useState(null), runningPromise = _a[0], setRunningPromise = _a[1];
     var run = useCallback(function (runner) { return __awaiter(_this, void 0, void 0, function () {
         var running;
         return __generator(this, function (_a) {
